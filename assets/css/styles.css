@@ -10,6 +10,319 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 1.6rem;
 }
+a {
+    text-decoration: none;
+}
+button {
+    border: none;
+    padding: 0px;
+}
 /* --------------------Phần các biến---------------------------------------------------------------------------------------- */
 /* --------------------Phần dùng chung Common------------------------------------------------------------------------------- */
-/* --------------------Phần nội dung CSS-----------------------------------------------------------------------------------  */
+.header {
+    background-color: #fff;
+}
+.header.fixed {
+    position: sticky;
+    top: -52px;
+}
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 135px);
+    margin-left: 135px;
+    margin-right: 135px;
+    margin: auto;
+}
+.btn:hover {
+    opacity: 0.8;
+}
+/* --------------------Phần nội dung CSS------------------------------------------------------------------------------------ */
+/* ---------------------------------------------Phần Header----------------------------------------------------------------- */
+.header {
+    z-index: 1;
+    padding-top: 52px;
+}
+.header .body {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+/* --------------------Phần nav----------------------------------------------------- */
+.header .body .nav ul {
+    display: flex;
+    margin-left: 215px;
+    margin-right: 133px;
+}
+.header .body .nav ul li a {
+    padding: 4px 20px;
+    font-weight: 400;
+    /* line-height: 24px; */
+    /* identical to box height */
+    color: #2f3a3b;
+}
+.header .body .nav ul li a.active {
+    font-weight: 600;
+}
+/* --------------------Phần btn---------------------------------------------------- */
+.header .body .action {
+    margin-left: auto;
+}
+/* Phần nút Sign-in */
+.header .body .action .action-link {
+    padding: 12px 12px;
+    /* line-height: 24px; */
+    /* identical to box height */
+    /* text-align: center; */
+    color: #494949;
+}
+/* Phần nút Sign-up */
+.header .body .action .btn {
+    display: inline-block;
+    margin-left: 12px;
+    min-width: 108px;
+    border: 1px solid #1ebfc1;
+    border-radius: 6px;
+    font-weight: 600;
+    line-height: 3;
+    /* identical to box height */
+    text-align: center;
+    color: #1ebfc1;
+}
+/* Phần hover vào nav */
+.header .body .nav ul li a:hover {
+    text-shadow: 1px 0 0 currentColor;
+}
+/* --------------------Phần Main-------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------Phần Hero------------------------------------------------------------------- */
+.hero .body {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 50px 0px 79px;
+    gap: 71px;
+}
+/* ----------Phần content-block (left)---------- */
+.hero .body .content-block .info {
+    /* Phần thẻ p info */
+    font-size: 1.4rem;
+    line-height: 1.5;
+    /* identical to box height */
+    color: #767e7e;
+}
+/* Phần tiêu đề h1 */
+.hero .body .content-block .title {
+    margin-top: 18px;
+    font-weight: 700;
+    font-size: 6.2rem;
+    line-height: 1.16;
+    color: #0d1111;
+}
+/* Phần desc */
+.hero .body .content-block .desc {
+    margin-top: 46px;
+    width: 374px;
+    font-size: 1.8rem;
+    line-height: 1.78;
+    color: #9da6a5;
+}
+/* ---Phần btn-block---*/
+.hero .body .content-block .btn-block {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 52px;
+}
+/* Phần nút btn */
+.hero .body .content-block .btn-block .btn {
+    display: inline-block;
+    min-width: 186px;
+    background: #1ebfc1;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 14px;
+    line-height: 27px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 68px;
+    text-align: center;
+    color: #ffffff;
+}
+/* Phần border icon play-video */
+.hero .body .content-block .btn-block .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.05);
+}
+/* ----------Phần media-block (right)---------- */
+.hero .body .media-block {
+    position: relative;
+    width: 55%;
+}
+/* -----Phần ảnh lớn----- */
+.hero .body .media-block .img-block {
+    margin-left: auto;
+    width: 576px;
+    height: 631px;
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+/* ---Phần hero-summary-1--- */
+.hero .body .media-block .hero-sumary-1 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 157px;
+    height: 75px;
+    padding: 0px 25px;
+    background: #fefefd;
+    box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+}
+/* Phần thẻ p của hero-sumary-1*/
+.hero .body .media-block .hero-sumary-1 p {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    color: #0d1111;
+}
+/* Phần ảnh nhỏ của hero-sumary-1 */
+.hero .body .media-block .hero-sumary-1 {
+    position: absolute;
+    top: 149px;
+    left: -40px;
+}
+.hero .body .media-block .hero-sumary-1 .icon {
+    position: relative;
+}
+/* Phần dấu gạch nhỏ trong hero-sumary-1 */
+.hero .body .media-block .hero-sumary-1 .icon::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 28px;
+    height: 4px;
+    top: 28px;
+    left: 4px;
+    background: #ffffff;
+    border-radius: 4px;
+}
+/* ---Phần hero-sumary-2---  */
+.hero .body .media-block .hero-sumary-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: -62px;
+    top: 453px;
+    width: 124px;
+    height: 132px;
+    background: #ffffff;
+    box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.05);
+    border-radius: 24px;
+}
+/* Phần thẻ p của sumary-2 */
+.hero .body .media-block .hero-sumary-2 p {
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    color: #0d1111;
+}
+/* --Phần thanh power-full của hero-sumary-2-- */
+.hero .body .media-block .hero-sumary-2 .power-full {
+    position: relative;
+    width: 74px;
+    height: 6px;
+    background: #edf1f5;
+    border-radius: 3px;
+}
+/* Phần thanh power nhỏ */
+.hero .body .media-block .hero-sumary-2 .power-full .power {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+/* Phần power-full và power 1 */
+.hero .body .media-block .hero-sumary-2 .power-full:nth-of-type(1) {
+    margin-top: 16px;
+}
+.hero .body .media-block .hero-sumary-2 .power-full:nth-of-type(1) .power {
+    width: 39px;
+    height: 6px;
+    background: #fb9899;
+    border-radius: 3px;
+}
+/* Phần power-full và power 2 */
+.hero .body .media-block .hero-sumary-2 .power-full:nth-of-type(2) {
+    margin-top: 12px;
+}
+.hero .body .media-block .hero-sumary-2 .power-full:nth-of-type(2) .power {
+    width: 51px;
+    height: 6px;
+    background: #fb9899;
+    border-radius: 3px;
+}
+/* Phần power-full và power 3 */
+.hero .body .media-block .hero-sumary-2 .power-full:nth-of-type(3) {
+    margin-top: 10px;
+}
+.hero .body .media-block .hero-sumary-2 .power-full:nth-of-type(3) .power {
+    width: 33px;
+    height: 6px;
+    background: #fb9899;
+    border-radius: 3px;
+}
+/* Phần power-full và power 4 */
+.hero .body .media-block .hero-sumary-2 .power-full:nth-of-type(4) {
+    width: 26px;
+    margin: 16px 0px 23px;
+}
+/* ---Phần hero-sumary-3--- */
+.hero .body .media-block .hero-sumary-3 {
+    position: absolute;
+    top: 500px;
+    left: 324px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 207px;
+    height: 90px;
+    background: #fefefd;
+    box-shadow: 0px 12px 80px rgba(0, 0, 0, 0.05);
+    border-radius: 24px;
+}
+
+.hero .body .media-block .hero-sumary-3 p {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    color: #0d1111;
+}
+.hero .body .media-block .hero-sumary-3 .avatar-icon {
+    display: flex;
+    margin-top: 8px;
+}
+.hero .body .media-block .hero-sumary-3 .avatar {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    margin-left: -7px;
+}
+.hero .body .media-block .hero-sumary-3 .avatar:first-child {
+    margin-left: 0px;
+}
+.hero .body .media-block .hero-sumary-3 span.avatar {
+    /*display:flex để Căn giữa chữ */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #1ebfc1;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    color: #ffffff;
+}

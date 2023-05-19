@@ -7,6 +7,7 @@
         <!-- Title -->
         <title>Words learner come here</title>
         <!-- Styles sheet -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/styles.css" />
         <!-- Font style -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,8 +17,121 @@
             rel="stylesheet"
         />
     </head>
-    <body>
+    <body style="height: 10000px">
         <!---------------------------------------------------Header----------------------------------------------------------->
-        <header class="header"></header>
+        <header class="header fixed">
+            <div class="main-content">
+                <div class="body">
+                    <!-- Logo -->
+                    <a href="#">
+                        <img src="/assets/img/Logo.svg" alt="Bensnik" />
+                    </a>
+                    <!-- Nav -->
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="#!" class="active">Home</a></li>
+                            <li><a href="#!">Features</a></li>
+                            <li><a href="#!">Pricing</a></li>
+                            <li><a href="#!">About</a></li>
+                            <li><a href="#!">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <!-- btn -->
+                    <div class="action">
+                        <a href="#!" class="action-link">Sign in</a>
+                        <a href="#!" class="btn">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!---------------------------------------------------Main------------------------------------------------------------->
+        <main>
+            <div class="hero">
+                <div class="main-content">
+                    <div class="body">
+                        <!-- Phần content-block (left) -->
+                        <div class="content-block">
+                            <p class="info">😎 EASY LEAENING PLATFORM</p>
+                            <h1 class="title">Words learner come here.</h1>
+                            <p class="desc">
+                                Build skills with courses, certificates, and get
+                                online knowledge from our world-class platform.
+                            </p>
+                            <!-- Phần btn-block -->
+                            <div class="btn-block">
+                                <button class="btn">Get Started</button>
+                                <div class="icon">
+                                    <img
+                                        src="./assets/icon/play-video.svg"
+                                        alt="Play video"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Phần media-block (right) -->
+                        <div class="media-block">
+                            <img
+                                src="./assets/img/kid-study.jpg"
+                                alt="Words learner come here."
+                                class="img-block"
+                            />
+                            <!-- Hero-sumary-1 -->
+                            <div class="hero-sumary-1">
+                                <div class="icon">
+                                    <img
+                                        src="./assets/favicon/Book.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <p>Courses 1000+</p>
+                            </div>
+                            <!-- Hero-sumary-2 -->
+                            <div class="hero-sumary-2">
+                                <p>Schedules</p>
+                                <div class="power-full">
+                                    <div class="power"></div>
+                                </div>
+                                <div class="power-full">
+                                    <div class="power"></div>
+                                </div>
+                                <div class="power-full">
+                                    <div class="power"></div>
+                                </div>
+                                <div class="power-full"></div>
+                            </div>
+                            <!-- Hero-sumary-3 -->
+                            <div class="hero-sumary-3">
+                                <div class="info">
+                                    <p>Our Active Students</p>
+                                    <div class="avatar-icon">
+                                        <img
+                                            src="./assets/img/avatar-1.jpg"
+                                            alt=""
+                                            class="avatar"
+                                        />
+                                        <img
+                                            src="./assets/img/avatar-2.jpg"
+                                            alt=""
+                                            class="avatar"
+                                        />
+                                        <img
+                                            src="./assets/img/avatar-3.jpg"
+                                            alt=""
+                                            class="avatar"
+                                        />
+                                        <img
+                                            src="./assets/img/avatar-4.jpg"
+                                            alt=""
+                                            class="avatar"
+                                        />
+                                        <span class="avatar">10K+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </body>
 </html>
